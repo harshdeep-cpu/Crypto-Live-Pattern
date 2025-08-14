@@ -1,0 +1,58 @@
+
+* { box-sizing: border-box; font-family: Inter, system-ui, Arial; }
+body { margin: 0; background: #fafafa; color: #222; }
+.wrap {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 { margin: 0 0 8px; font-size: 28px; }
+.sub { margin: 0 0 16px; color: #666; }
+.legend { margin-top: 12px; display: flex; gap: 12px; font-size: 13px; color: #555; }
+.bull::before { content: "⬇"; color: #27ae60; margin-right: 6px; }
+.bear::before { content: "⬆"; color: #e74c3c; margin-right: 6px; }
+.doji::before { content: "✦"; color: #6c5ce7; margin-right: 6px; }
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
